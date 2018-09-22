@@ -92,7 +92,32 @@ document.arithmaticfrm.num3.value=num3;
 
 
 
+var mywindow;
+function showalertbox()
+{
+alert("alert message");
+}
 
+function showconifrmationbox()
+{
+var status=window.confirm();
+}
+
+function showinputbox()
+{
+var name=window.prompt("Enter name ");
+window.alert("Entered name "+name);
+}
+
+function openit()
+{
+mywindow=open('','mywin','height=300,width=300,scrollbars=yes');
+mywindow.document.writeln("<html><head><title>fun</title></head><body>");
+mywindow.document.writeln("<h1>New Window</h1>");
+mywindow.document.close();
+mywindow.focus();
+mywindow.alert("Hey guys");
+}
 
 
 
