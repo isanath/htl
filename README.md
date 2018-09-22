@@ -31,3 +31,82 @@ mywindow.document.writeln("</html></body>");
 
 document.arithmaticfrm.num3.value=num3;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/associatedata" xmlns:tns="http://www.example.org/associatedata"  elementFormDefault="qualified">
+<element name="AssociateData"   >
+<complexType>
+<sequence>
+<element name="Associate"   minOccurs=" 1"    maxOccurs=" unbounded"  >
+<complexType>
+<sequence>
+<element name="yearlyInvestmentUnder80c"    type="  integer"></element>
+<element name=" firstName"    type="  string"></element>
+<element name=" lastName"    type="  string"></element>
+<element name="department"    >
+<simpleType>
+<restriction base="string">
+<enumeration value="Sr.con"></enumeration>
+<enumeration value="con"></enumeration>
+
+</restriction>
+
+</simpleType>
+
+</element>
+<element name=" designation"    type="  string"></element>
+<element name="emailId"    type="  string"></element>
+<element name="BankDetails">
+<complexType>
+<sequence>
+<element name="accountNumber"   type="integer"></element>
+<element name="bankName"   type="string"></element>
+<element name="IFSCcode"   type="string"></element>
+</sequence>
+</complexType>
+</element>
+</sequence>
+<attribute  name="Associateid"  type="integer"  use="required"></attribute>
+</complexType>
+</element>
+</sequence>
+</complexType>
+</element>
+</schema>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
